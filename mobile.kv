@@ -1,0 +1,556 @@
+<MobileView>
+    md_bg_color:"#1A2035"
+    AnchorLayout:
+        md_bg_color:"#1A2035"
+        anchor_x:'center'
+        anchor_y:'top'
+
+
+
+
+        MDTopAppBar:
+
+            md_bg_color:"#1A2035"
+            #adaptive_height: True
+            left_action_items: [["menu",lambda x:nav_drawer.set_state('toggle')]]
+            right_action_items: [["dots-vertical", lambda x: banner.show()]]
+
+        Image:
+            source:"home.png"
+            size_hint:.3,.1
+                #size:(450,100)
+    MDBanner:
+        id: banner
+        text: ["One line string text example without actions."]
+
+       # vertical_pad: MDTopAppBar.height
+
+
+
+
+
+
+
+
+
+
+    ScrollView:
+        size_hint_y:.87
+        size_hint_x:.95
+        pos_hint:{'x':.05,'y':.05}
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 5
+            spacing: 5
+            size_hint: 1, None
+            height: self.minimum_height
+
+            MDCard:
+                size_hint_y: None
+                #height: 100
+                md_bg_color:"#1A2035"
+                orientation:'vertical'
+
+                MDScreen:
+
+                    Label:
+                        text:"Welcome back, jagan!"
+                        pos_hint: {"center_x": .14,"center_y":.6}
+                        font_size:17
+                    Label:
+                        text:"Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am \n changing myself."
+                        pos_hint: {"center_x":.38,"center_y":.3}
+                        font_size:13
+                                                                        ##############1ow
+            MDCard:
+                size_hint_y: None
+                height: 120
+                md_bg_color:"#1A2035"
+                #orientation:'vertical'
+                spacing:10
+                padding:10
+
+
+                MDScreen:
+                    md_bg_color:"#1572E8"
+                    radius:5,5,5,5
+
+                    Label:
+                        text:"Yarn stack"
+                        pos_hint: {"center_x": .5,"center_y":.6}
+                        font_size:17
+
+                                                                       ##################2row
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 120
+                MDScreen:
+                    radius:5,5,5,5
+                    md_bg_color:"#48ABF7"
+
+
+
+                                                                      ################3 row
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 120
+                #orientation: 'vertical'
+                MDScreen:
+                    radius:5,5,5,5
+                    md_bg_color:"#31CE36"
+
+
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 120
+                #orientation: 'vertical'
+
+                MDScreen:
+                    md_bg_color:"#6861CE"
+                    radius:5,5,5,5
+#############2row
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:20
+                padding:10
+                size_hint_y:None
+                height: 500
+                orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:20
+                padding:10
+                size_hint_y:None
+                height: 500
+                orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 130
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 130
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+
+
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 130
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 130
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 120
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 120
+                #orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:20
+                padding:10
+                size_hint_y:None
+                height: 700
+                orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 500
+                orientation: 'vertical'
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                    #size_hint_y:.7
+                MDCard:
+                    md_bg_color:"#202940"
+                    spacing:0
+                    padding:0
+                   # size_hint_y:.7
+            MDCard:
+                md_bg_color:"#1A2035"
+                spacing:10
+                padding:10
+                size_hint_y:None
+                height: 500
+                #orientation: 'vertical'
+                MDScreen:
+                    md_bg_color:"#202940"
+
+
+    MDNavigationLayout:
+        MDNavigationDrawer:
+            id: nav_drawer
+            md_bg_color:"#1A2035"
+            MDBoxLayout:
+                ScrollView:
+
+                    MDList:
+                        # MDExpansionPanel:
+                           ##on_open: app.on_panel_open(args)
+                           ##on_close: app.on_panel_close(args)
+
+
+
+                        OneLineAvatarIconListItem:
+                            text: "jagan"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "account-circle"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+
+                        OneLineAvatarIconListItem:
+                            text: "Master"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:  "pencil-box"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+
+                        OneLineAvatarIconListItem:
+                            text: "Sourcing"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "layers-triple"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+
+                        OneLineAvatarIconListItem:
+                            text: "Order Management"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "cube"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Process"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "gamepad-round-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Stock Movement"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "flash-triangle"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Cutting"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "store"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Production"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"layers-triple-outline"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "General"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"alpha-m"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Stores"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"database"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Accounts"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"database"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+
+                        OneLineAvatarIconListItem:
+                            text: "Simple Production"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"view-compact"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Warehouse"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"layers-triple-outline"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Reports"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon:"ambulance"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Settings"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "cog"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                        OneLineAvatarIconListItem:
+                            text: "Stock Auditing"
+                            theme_text_color: "Custom"
+                            text_color: "#B9BAB5"
+                            IconLeftWidget:
+                                icon: "chart-box"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+                            IconRightWidget:
+                                icon: "menu-down"
+                                theme_text_color: "Custom"
+                                text_color: "#B9BAB5"
+
+
